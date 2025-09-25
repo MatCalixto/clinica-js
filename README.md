@@ -63,5 +63,3 @@ http://localhost:3000
 | DELETE | `/api/medicos/:id`     | Remove a technician        |
 
 ---
-
-Do you also want me to add a **basic `server.js` example** with the CRUD routes for technicians (matching the README), so anyone cloning `clinica-express` has a working demo right away?

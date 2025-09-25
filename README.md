@@ -1,24 +1,67 @@
-# Postgres Starter
+---
 
-A simple postgres starter for Project IDX.
+# 🏥 Clinica Express – Backend API
 
-> NOTE: You might have to reload the window once the dependencies are installed for the SQLConnection extension to work as expected
+In this project I’m building a **clinic backend system** using **Express.js**.
+It’s a simple CRUD application for managing **technicians**, each having an **ID**, **CRM (unique)**, **name**, and **specialty**.
 
+---
 
-## Connect to DB
+## 🛠 Tech Stack
 
-To connect to the DB, run the following command in terminal:
+* **Node.js** – Runtime environment
+* **Express.js** – Web framework
+* **PostgreSQL** – Database
+* **Prisma** - ORM
+
+---
+
+## 📦 Installation
+
+Clone this repository:
+
+```bash
+git clone https://github.com/MatCalixto/clinica-express.git
+```
+
+Go into the project folder:
+
+```bash
+cd clinica-express
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## ▶️ Usage
+
+Once running, the server will be available at:
 
 ```
-psql postgresql://user:mypassword@localhost:5432/youtube?sslmode=disable
-psql (15.7)
-Type "help" for help.
-youtube=# select * from videos limit 2;
+http://localhost:3000
 ```
 
-You can also instead use the SQLDriver extension (already installed) to inspect the DB.
+### API Endpoints (Technicians 👨‍⚕️👩‍⚕️)
 
-## Next steps
+| Method | Endpoint               | Description                |
+| ------ | ---------------------- | -------------------------- |
+| GET    | `/api/medicos`         | Get all technicians        |
+| GET    | `/api/medicos/:id`     | Get a technician by CRM/ID |
+| POST   | `/api/medicos`         | Add a new technician       |
+| PUT    | `/api/medicos/:id`     | Update a technician’s data |
+| DELETE | `/api/medicos/:id`     | Remove a technician        |
 
-Look at .idx/dev.nix to learn more on the data was loaded in the DB.
+---
 
+Do you also want me to add a **basic `server.js` example** with the CRUD routes for technicians (matching the README), so anyone cloning `clinica-express` has a working demo right away?
